@@ -1,34 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="./app.js" defer></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Saad Mansoor</title>
-</head>
-<body>
-    <section>
-            <nav>
-                <img src="" alt="">
-                <ul>
-                    <li>
-                        <a href=""></a>
-                    </li>
-                    <li>
-                        <a href=""></a>
-                    </li>
-                    <li>
-                        <a href=""></a>
-                    </li>
-                </ul>
-            </nav>
-            <header>
-                <div>
-                    <h1>Hello</h1>
-                    <p>Hello my name is Saad</p>
-                </div>
-            </header>
+  </head>
+  <body>
+    <section id="landing-page">
+      <nav>
+        <figure>
+          <img id="personal-logo" src="./assets/logowhite.svg" alt="" />
+        </figure>
+        <ul class="nav__link--list">
+          <li class="nav__link">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >About</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Projects</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Contact</a
+            >
+          </li>
+          <li class="nav__link click">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              ><i class="fas fa-adjust"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <header class="header">
+        <div class="header__content">
+          <h1 class="title">Hey,</h1>
+          <h1 class="title orange">I'm Saad.</h1>
+          <p class="header__para">
+            I am a <b class="orange">Frontend Software Developer</b> with a love
+            for aesthetics and functionality. Every line of code I make is
+            driven by a desire to create exceptional online experiences.
+
+            <br />
+
+            Here's a bit more <b class="orange">about me!</b>
+          </p>
+          <div class="social__list">
+            <a href="https://www.linkedin.com/in/saad-mansoor1998" target="_blank" class="social__link click">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/SaadM98" target="_blank"  class="social__link click">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="./assets/FinalResume.pdf" target="_blank"  class="social__link click">
+              <i class="fas fa-file-pdf"></i>
+            </a>
+          </div>
+        </div>
+      </header>
+      <button class="mail__button click"> 
+        <i class="fas fa-envelope"></i>
+      </button>
+      <a href="#projects" class="scroll">
+          <div class="scroll__icon click"></div>
+      </a>
     </section>
-</body>
+  </body>
 </html>
