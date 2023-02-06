@@ -1,6 +1,6 @@
 let isModalOpen = false;
 let contrastToggle = false;
-const scaleFactor = 1/ 20;
+const scaleFactor = 1 / 20;
 
 
 function moveBackground(event){
@@ -9,12 +9,14 @@ function moveBackground(event){
     const y = event.clientY * scaleFactor;
 
     for(let i = 0; i < shapes.length; i++){
-        shapes[i].style.transform = 'translate(${x}px,${y}px)'
+        const isOdd = i % 2 !== 0;
+        const boolInt = isOdd ? -1 : 1;
+        shapes[i].style.transform = `translate(${x * boolInt}px,${y * boolInt}px)`
     }
 }
 
 
-// Toggleing dark mode and light mode.
+// Toggling dark mode and light mode.
 function toggleContrast(){
     contrastToggle = !contrastToggle;
     if(contrastToggle){
