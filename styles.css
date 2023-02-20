@@ -342,8 +342,8 @@ PROJECTS
 
 .project__wrapper{
     position: relative;
-    width: 1080px;
-    height: 562px;
+   /* width: 1080px;
+    height: 562px;*/
     border-radius: 20px;
     box-shadow: 0 20px 80px 0 rgba(0, 0, 0, 0.45);
     overflow: hidden;
